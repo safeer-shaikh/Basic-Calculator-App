@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: #EBE5E5;">
+	<h1 class="h1"><u>Basic Calculator</u></h1>
+	<div class="body">
+		<div>
+			<input id="result" class="result" type="text" style="font-size: 20px;">
+		</div>
+		<div>
+			<button class="acBtn" onclick="clearResult()">AC</button>
+			<button style="background-color: orange; color: #303030;" class="firstBtn"  onclick="getNumber('%')">%</button>
+			<button style="background-color: orange; color: #303030;" class="firstBtn"  onclick="getNumber('/')">÷</button>
+		</div>
+		<div>
+			<button class="Btn" onclick="getNumber('7')">7</button>
+			<button class="Btn" onclick="getNumber('8')">8</button>
+			<button class="Btn" onclick="getNumber('9')">9</button>
+			<button style="background-color: orange; color: #303030;" class="Btn" onclick="getNumber('*')">x</button>
+		</div>
+		<div>
+			<button class="Btn" onclick="getNumber('4')">4</button>
+			<button class="Btn" onclick="getNumber('5')">5</button>
+			<button class="Btn" onclick="getNumber('6')">6</button>
+			<button style="background-color: orange; color: #303030;" class="Btn" onclick="getNumber('-')">-</button>
+		</div>
+		<div>
+			<button class="Btn" onclick="getNumber('1')">1</button>
+			<button class="Btn" onclick="getNumber('2')">2</button>
+			<button class="Btn" onclick="getNumber('3')">3</button>
+			<button style="background-color: orange; color: #303030;" class="Btn" onclick="getNumber('+')">+</button>
+		</div>
+			<button class="Btn" onclick="getNumber('0')">0</button>
+			<button class="Btn" onclick="getNumber('.')">.</button>
+			<button style="background-color: orange; color: #303030;" class="lastBtn" onclick="getResult()">=</button>
+	</div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>
